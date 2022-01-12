@@ -44,5 +44,4 @@ struct Game {
             isOver = true
         }
     }
-    
 }

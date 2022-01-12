@@ -61,13 +61,5 @@ class GameViewModel: ObservableObject {
              return GameColor.main
          }
      }
-    
-    var guessCount: (correct: Int, incorrect: Int) {
-        game.guessCount
-    }
-    
-    var numberOfQuestions: Int {
-        game.numberOfQuestions
-    }
-    
+
 }

@@ -23,8 +23,9 @@ struct GameView: View {
       }
     }
     .background(
-        NavigationLink(destination: ScoreView(qualityAnswers: viewModel.guessCount),isActive: .constant(viewModel.gameIsOver), label: { EmptyView() })
-            .environmentObject(viewModel)
+        NavigationLink(destination: Text("Game Over!"),
+                            isActive: .constant(viewModel.gameIsOver),
+                            label: { EmptyView() })
     )
     .foregroundColor(.white)
     .navigationBarHidden(true)
